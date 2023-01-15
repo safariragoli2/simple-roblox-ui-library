@@ -1,6 +1,5 @@
 local self = {}
 local userInputService = game:GetService("UserInputService")
-local players = game:GetService("Players")
 
 self.openUiKey = Enum.KeyCode.PageUp
 self.colorSets = {

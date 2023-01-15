@@ -120,7 +120,7 @@ function self:addNewTab(name, frame)
 
 	tabButton.MouseButton1Click:Connect(function()
 		if frame.Parent ~= self.contentArea then
-			local uiObject = self.contentArea:FindFirstChildOfClass("GuiObject")
+			local uiObject = self.contentArea:FindFirstChildWhichIsA("GuiObject")
 			
 			if uiObject then
 				uiObject.Parent = nil

@@ -120,13 +120,10 @@ function self:addNewTab(name, frame)
 
 	tabButton.MouseButton1Click:Connect(function()
 		if frame.Parent ~= self.contentArea then
-			local frame = self.contentArea:FindFirstChildOfClass("Frame")
-			local scrollingFrame = self.contentArea:FindFirstChildOfClass("ScrollingFrame")
+			local uiObject = self.contentArea:FindFirstChildOfClass("GuiObject")
 			
-			if frame then
-				frame.Parent = nil
-			elseif scrollingFrame then
-				scrollingFrame.Parent = nil
+			if uiObject then
+				uiObject.Parent = nil
 			end
 		end
 		frame.Parent = (frame.Parent ~= self.contentArea) and self.contentArea or nil

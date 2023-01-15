@@ -194,3 +194,5 @@ function self:enableResize(frame, parent)
 		end
 	end)
 end
+
+return self

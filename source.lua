@@ -15,7 +15,7 @@ self.resizingFrame = false
 getgenv().instance = math.random(-999999999, 999999999)
 self.instance = getgenv().instance
 
-function self:setOPenUiKey(enumKey)
+function self:setOpenUiKey(enumKey)
 	self.openUiKey = enumKey	
 end
 

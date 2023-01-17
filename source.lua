@@ -15,6 +15,10 @@ self.resizingFrame = false
 getgenv().instance = math.random(-999999999, 999999999)
 self.instance = getgenv().instance
 
+function self:setOPenUiKey(enumKey)
+	self.openUiKey = enumKey	
+end
+
 function self:setColorSet(colorSet)
 	self.activeColorSet = self.colorSets[colorSet]
 end

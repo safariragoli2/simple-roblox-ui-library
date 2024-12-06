@@ -187,7 +187,7 @@ function self:enableResize(frame, parent)
 			spawn(function()
 				while self.resizingFrame do
 					task.wait()
-					local delta = userInputService:GetMouseLocation() - Vector2.new(mousePos.X, mousePos.Y+36) -- gui inset
+					local delta = userInputService:GetMouseLocation() - Vector2.new(mousePos.X, mousePos.Y+36) -- gui inset | 12/05/24 - dont think ui inset is always 36 now
 					parent.Size = UDim2.fromOffset(math.max(frameSizeX+delta.X, 10), math.max(frameSizeY+delta.Y, 10))
 				end
 			end)
